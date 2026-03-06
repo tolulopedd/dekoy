@@ -1,0 +1,88 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Real estate and telecom infrastructure illustration">
+  <defs>
+    <linearGradient id="bgGrad" x1="200" y1="60" x2="1420" y2="920" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#001534" />
+      <stop offset="0.55" stop-color="#06224A" />
+      <stop offset="1" stop-color="#0A2F61" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8CF84" />
+      <stop offset="1" stop-color="#A97A20" />
+    </linearGradient>
+    <linearGradient id="silverGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5F7FA" />
+      <stop offset="1" stop-color="#9FA9B7" />
+    </linearGradient>
+    <linearGradient id="towerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E0E6F0" />
+      <stop offset="1" stop-color="#76859B" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bgGrad)" />
+
+  <circle cx="1300" cy="180" r="180" fill="#FFFFFF" fill-opacity="0.06" />
+  <circle cx="260" cy="140" r="120" fill="#D4B15A" fill-opacity="0.12" />
+
+  <path d="M0 760C220 700 340 860 560 810C760 760 920 640 1120 700C1280 748 1420 826 1600 780V1000H0V760Z" fill="#061B3D" />
+  <path d="M0 808C230 750 420 886 620 852C780 824 970 740 1160 782C1320 820 1450 900 1600 860V1000H0V808Z" fill="#07264F" />
+
+  <g opacity="0.98">
+    <rect x="180" y="370" width="120" height="360" fill="url(#silverGrad)" />
+    <rect x="312" y="320" width="110" height="410" fill="url(#towerGrad)" />
+    <rect x="436" y="270" width="140" height="460" fill="url(#silverGrad)" />
+    <rect x="592" y="240" width="150" height="490" fill="url(#goldGrad)" />
+    <rect x="756" y="300" width="120" height="430" fill="url(#towerGrad)" />
+    <rect x="890" y="355" width="100" height="375" fill="url(#silverGrad)" />
+    <rect x="1000" y="410" width="88" height="320" fill="url(#towerGrad)" />
+  </g>
+
+  <g fill="#0B2246" fill-opacity="0.72">
+    <rect x="205" y="410" width="18" height="280" />
+    <rect x="340" y="360" width="18" height="320" />
+    <rect x="470" y="320" width="20" height="350" />
+    <rect x="626" y="292" width="22" height="366" />
+    <rect x="790" y="350" width="18" height="330" />
+  </g>
+
+  <g>
+    <path d="M500 745L690 610L875 745H500Z" fill="url(#goldGrad)" />
+    <path d="M560 745L690 648L818 745H560Z" fill="#081E40" />
+    <rect x="615" y="742" width="150" height="108" fill="#0A244A" />
+    <rect x="680" y="772" width="22" height="42" rx="11" fill="#D6B767" />
+    <rect x="713" y="772" width="22" height="42" rx="11" fill="#D6B767" />
+  </g>
+
+  <g>
+    <path d="M1125 780L1180 470L1235 780H1125Z" fill="url(#towerGrad)" />
+    <rect x="1171" y="455" width="18" height="26" fill="#D4B15A" />
+    <rect x="1162" y="518" width="36" height="14" fill="#D4B15A" />
+    <rect x="1155" y="580" width="50" height="12" fill="#D4B15A" />
+
+    <path d="M1180 448C1210 448 1232 424 1232 394" stroke="#D4B15A" stroke-width="8" stroke-linecap="round" filter="url(#softGlow)" />
+    <path d="M1180 448C1148 448 1126 424 1126 394" stroke="#C7CED8" stroke-width="8" stroke-linecap="round" filter="url(#softGlow)" />
+    <path d="M1180 448C1222 448 1258 414 1258 370" stroke="#D4B15A" stroke-opacity="0.8" stroke-width="6" stroke-linecap="round" />
+    <path d="M1180 448C1138 448 1102 414 1102 370" stroke="#C7CED8" stroke-opacity="0.8" stroke-width="6" stroke-linecap="round" />
+  </g>
+
+  <g stroke-width="4" fill="none">
+    <path d="M260 825C470 760 620 770 840 820" stroke="url(#goldGrad)" />
+    <path d="M310 850C550 790 770 806 1000 855" stroke="url(#silverGrad)" stroke-opacity="0.85" />
+  </g>
+
+  <g>
+    <circle cx="970" cy="790" r="9" fill="#D4B15A" />
+    <circle cx="1040" cy="815" r="9" fill="#C7CED8" />
+    <circle cx="1110" cy="795" r="9" fill="#D4B15A" />
+    <path d="M970 790L1040 815L1110 795" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="2" />
+  </g>
+
+  <rect x="100" y="90" width="1400" height="820" rx="36" stroke="#D4B15A" stroke-opacity="0.25" stroke-width="2" />
+</svg>

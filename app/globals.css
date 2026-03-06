@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-manrope:
+    "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-lora:
+    "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-mist text-ink antialiased;
+  background-image: radial-gradient(circle at 90% 0%, rgba(212, 177, 90, 0.08), transparent 32%);
+}
+
+main {
+  @apply relative;
+}
+
+::selection {
+  @apply bg-accent/20 text-ink;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  @apply outline-none ring-2 ring-accent/40 ring-offset-2 ring-offset-white;
+}
+
+.texture-bg {
+  background-color: #f5f7fb;
+  background-image:
+    radial-gradient(circle at 15% 12%, rgba(212, 177, 90, 0.16), transparent 32%),
+    radial-gradient(circle at 80% 0%, rgba(199, 206, 216, 0.22), transparent 26%),
+    linear-gradient(140deg, rgba(0, 18, 44, 0.06), rgba(138, 100, 24, 0.04));
+}
+
+.brand-band {
+  background: linear-gradient(110deg, #00122c 0%, #031839 48%, #0a264f 100%);
+}
+
+.brand-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(212, 177, 90, 0), rgba(212, 177, 90, 0.65), rgba(212, 177, 90, 0));
+}

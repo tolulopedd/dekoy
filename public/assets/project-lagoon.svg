@@ -1,0 +1,15 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="uproject lagoon">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C1A24" />
+      <stop offset="55%" stop-color="#0D7A5F" />
+      <stop offset="100%" stop-color="#CFA463" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#grad)" />
+  <circle cx="1280" cy="220" r="190" fill="white" fill-opacity="0.12" />
+  <circle cx="260" cy="760" r="240" fill="white" fill-opacity="0.1" />
+  <rect x="120" y="100" width="1360" height="800" rx="36" stroke="white" stroke-opacity="0.24" stroke-width="2" />
+  <text x="160" y="500" fill="white" font-size="72" font-family="Manrope, sans-serif" font-weight="700">uproject lagoon</text>
+  <text x="160" y="570" fill="#E6F4EE" font-size="30" font-family="Manrope, sans-serif">DeKoy Placeholder Asset</text>
+</svg>

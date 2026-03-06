@@ -1,0 +1,37 @@
+import type { Metadata } from 'next';
+import { ProjectsExplorer } from '@/components/ProjectsExplorer';
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description:
+    'Browse DeKoy case studies across six divisions with filtering by division and search.',
+  openGraph: {
+    title: 'DeKoy Projects',
+    description:
+      'Case studies and delivery outcomes across Real Estate Development, Real Estate Agency, Engineering Services, Telecommunications, Information Technology, and Project Management.',
+    images: ['/assets/og-projects.svg']
+  }
+};
+
+export default function ProjectsPage() {
+  return (
+    <>
+      <section className="brand-band border-b border-gold/25 text-white">
+        <div className="mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
+          <span className="inline-flex items-center rounded-full border border-gold/45 bg-gold/10 px-3 py-1 text-xs font-semibold tracking-wide text-gold">
+            Projects
+          </span>
+          <h1 className="mt-4 font-[var(--font-lora)] text-4xl text-white">Project Case Studies</h1>
+          <div className="brand-divider mt-4 max-w-xl" />
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-200 sm:text-base">
+            Track delivery outcomes, technical scope, and practical impact from DeKoy engagements across sectors.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <ProjectsExplorer />
+      </section>
+    </>
+  );
+}
