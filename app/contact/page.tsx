@@ -14,6 +14,10 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const mapQuery = 'House 5B, Block 1, Howson Wright Estate, Olusesun, Ojota, Oregun, Lagos';
+  const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(mapQuery)}&z=15&output=embed`;
+  const mapLinkUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`;
+
   return (
     <>
       <section className="brand-band border-b border-gold/25 text-white">
@@ -79,13 +83,26 @@ export default function ContactPage() {
 
           <article className="rounded-2xl border border-slate/15 bg-white p-4 shadow-soft">
             <h2 className="px-2 text-lg font-semibold text-ink">Map</h2>
-            <div
-              className="mt-3 flex h-64 items-center justify-center rounded-xl border border-dashed border-slate/30 bg-mist text-center text-sm text-slate"
-              role="img"
-              aria-label="Embedded map placeholder"
-            >
-              Embedded map placeholder
+            <div className="mt-3 overflow-hidden rounded-xl border border-slate/15">
+              <iframe
+                title="Map showing DeKoy office location in Oregun, Lagos"
+                src={mapEmbedUrl}
+                className="h-64 w-full"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
+            <p className="mt-3 px-2 text-sm text-slate">
+              Closest map reference: {mapQuery}
+            </p>
+            <a
+              href={mapLinkUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-3 inline-flex items-center rounded-full border border-gold/35 bg-gold/10 px-4 py-2 text-sm font-semibold text-ink transition hover:border-gold/60 hover:bg-gold/15"
+            >
+              Open in Google Maps
+            </a>
           </article>
         </aside>
       </section>

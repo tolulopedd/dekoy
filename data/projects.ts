@@ -28,7 +28,7 @@ export const projects: Project[] = [
   {
     id: 'proj-2',
     slug: 'base-station-mast-power-management',
-    name: 'Base Station Mast & Power Management',
+    name: 'Telecommunications Mast & Power Management',
     divisionId: 'telecommunications',
     categoryLabel: 'Telecoms Project',
     location: 'Nigeria',
@@ -51,11 +51,11 @@ export const projects: Project[] = [
       'transmission-power-ict-support',
       'telecom-site-operations-maintenance'
     ],
-    image: '/assets/project-bsm-power-1.jpg',
+    image: '/assets/project-telecom-mast-1.jpg',
     gallery: [
-      '/assets/project-bsm-power-1.jpg',
-      '/assets/project-bsm-power-2.jpg',
-      '/assets/project-bsm-power-3.jpg'
+      '/assets/project-telecom-mast-1.jpg',
+      '/assets/project-telecom-mast-2.jpg',
+      '/assets/project-telecom-mast-3.jpg'
     ]
   },
   {

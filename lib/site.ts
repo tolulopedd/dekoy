@@ -2,7 +2,7 @@ const resolvedSiteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
   process.env.URL ||
   process.env.DEPLOY_PRIME_URL ||
-  'https://example.com';
+  'https://dekoyng.com';
 
 export const siteConfig = {
   companyName: 'DeKoy Limited',
@@ -13,7 +13,7 @@ export const siteConfig = {
   email: 'info@dekoyng.com',
   phone: '+234-8099444003',
   phones: ['+234-8099444003', '+234-8022224824'],
-  addressLines: ['House 5B, Block 1,', 'Sapphire Lane,', 'Howston Wright Estate,', 'Oregun, Lagos'],
+  addressLines: ['House 5B, Block 1,', 'Sapphire Lane,', 'Howson Wright Estate,', 'Olusesun, Ojota, Oregun, Lagos'],
   socials: {
     instagramHandle: '@DeKoyLimited',
     instagramUrl: 'https://www.instagram.com/DeKoyLimited',

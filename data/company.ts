@@ -1,6 +1,6 @@
 export const companyProfile = {
   name: 'DeKoy Limited',
-  registrationNumber: 'RC 9251533',
+  registrationNumber: '9251533',
   overview:
     'DeKoy Limited delivers integrated, end-to-end solutions across Real Estate, Engineering, Telecommunications & IT, Project Management, and General Services - combining technical expertise, operational excellence, and disciplined execution to drive measurable value for clients',
   vision:

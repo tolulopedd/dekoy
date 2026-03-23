@@ -10,6 +10,7 @@ import { RequestQuoteButton } from './RequestQuoteButton';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
+  { href: '/properties', label: 'Properties' },
   { href: '/projects', label: 'Projects' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' }
@@ -43,7 +44,7 @@ export function Navbar() {
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
           {navLinks.map((link) => {
-            const active = pathname === link.href;
+            const active = link.href === '/' ? pathname === '/' : pathname === link.href || pathname.startsWith(`${link.href}/`);
             return (
               <Link
                 key={link.href}
@@ -80,7 +81,7 @@ export function Navbar() {
         <div id="mobile-menu" className="border-t border-slate/15 bg-white md:hidden">
           <nav className="space-y-1 px-4 py-4" aria-label="Mobile Primary">
             {navLinks.map((link) => {
-              const active = pathname === link.href;
+              const active = link.href === '/' ? pathname === '/' : pathname === link.href || pathname.startsWith(`${link.href}/`);
               return (
                 <Link
                   key={link.href}

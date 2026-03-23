@@ -32,6 +32,25 @@ export type Project = {
   gallery: string[];
 };
 
+export type PropertyListing = {
+  id: string;
+  slug: string;
+  status: 'For Sale' | 'For Rent';
+  title: string;
+  propertyType: string;
+  bedrooms: number;
+  location: string;
+  estate: string;
+  summary: string;
+  overview: string;
+  titleDocument: string;
+  heroImage: string;
+  gallery: string[];
+  features: string[];
+  highlights: Array<{ label: string; value: string }>;
+  mapQuery: string;
+};
+
 export type Testimonial = {
   id: string;
   name: string;

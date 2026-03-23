@@ -6,6 +6,7 @@ import { siteConfig } from '@/lib/site';
 const quickLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
+  { href: '/properties', label: 'Properties' },
   { href: '/projects', label: 'Projects' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' }

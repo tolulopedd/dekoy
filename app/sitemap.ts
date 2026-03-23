@@ -1,11 +1,12 @@
 import type { MetadataRoute } from 'next';
+import { properties } from '@/data/properties';
 import { projects } from '@/data/projects';
 import { siteConfig } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
 
-  const staticRoutes = ['', '/services', '/projects', '/about', '/contact'].map((route) => ({
+  const staticRoutes = ['', '/services', '/properties', '/projects', '/about', '/contact'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
@@ -19,5 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7
   }));
 
-  return [...staticRoutes, ...projectRoutes];
+  const propertyRoutes = properties.map((property) => ({
+    url: `${baseUrl}/properties/${property.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.85
+  }));
+
+  return [...staticRoutes, ...projectRoutes, ...propertyRoutes];
 }
