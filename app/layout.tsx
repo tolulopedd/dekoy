@@ -8,7 +8,7 @@ import { siteConfig } from '@/lib/site';
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.companyName} | Premium Corporate Delivery`,
+    default: `${siteConfig.companyName} | ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.companyName}`
   },
   description: siteConfig.tagline,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'DeKoy'
   ],
   openGraph: {
-    title: `${siteConfig.companyName} | Premium Corporate Delivery`,
+    title: `${siteConfig.companyName} | ${siteConfig.tagline}`,
     description: siteConfig.tagline,
     url: siteConfig.url,
     siteName: siteConfig.companyName,
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.companyName} | Premium Corporate Delivery`,
+    title: `${siteConfig.companyName} | ${siteConfig.tagline}`,
     description: siteConfig.tagline,
     images: ['/assets/og-default.svg']
   },
   icons: {
-    icon: '/assets/dekoy-logo.jpg',
-    shortcut: '/assets/dekoy-logo.jpg',
-    apple: '/assets/dekoy-logo.jpg'
+    icon: '/assets/dekoy-logo.png',
+    shortcut: '/assets/dekoy-logo.png',
+    apple: '/assets/dekoy-logo.png'
   }
 };
 

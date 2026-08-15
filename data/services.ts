@@ -108,15 +108,28 @@ export const services: Service[] = [
   {
     id: 'network-rollout-site-implementation',
     divisionId: 'telecommunications',
-    title: 'Network Rollout and Site Implementation Support',
+    title: 'NETWORK ROLLOUT & SITE IMPLEMENTATION',
     shortDescription:
-      'Regional rollout support for telecom expansion programs with fast, controlled site implementation.',
+      'End-to-end engineering and project execution for telecom network rollout, expansion, upgrade and site implementation programs.',
     capabilities: [
-      'Site readiness audits and mobilization',
-      'Field deployment coordination',
-      'Acceptance testing and handover support'
+      'Technical site surveys, site readiness assessments and mobilization',
+      'Network rollout and site implementation',
+      'Equipment installation, integration and commissioning',
+      'Field deployment and contractor coordination',
+      'Quality inspections, snag identification and resolution',
+      'Acceptance testing and site handover',
+      'Project progress monitoring and reporting',
+      'HSSE and quality compliance'
     ],
-    deliverables: ['Rollout tracker', 'Site acceptance pack', 'Deployment completion report']
+    deliverables: [
+      'Technical Site Survey (TSS) Report',
+      'Site Readiness Report',
+      'Rollout & Implementation Tracker',
+      'Site Acceptance Documentation',
+      'Snag List & Closure Report',
+      'Deployment Completion Report',
+      'Site Handover Pack'
+    ]
   },
   {
     id: 'telecom-site-operations-maintenance',

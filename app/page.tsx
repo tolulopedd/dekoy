@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Badge } from '@/components/Badge';
 import { DivisionCard } from '@/components/DivisionCard';
 import { FAQAccordion } from '@/components/FAQAccordion';
+import { HomeHeroSlider } from '@/components/HomeHeroSlider';
 import { ProjectCard } from '@/components/ProjectCard';
 import { RequestQuoteButton } from '@/components/RequestQuoteButton';
 import { Reveal } from '@/components/Reveal';
@@ -42,7 +43,6 @@ export default function HomePage() {
       <section className="texture-bg border-b border-gold/20">
         <div className="mx-auto grid w-full max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-20">
           <Reveal>
-            <Badge>DeKoy : Reg No: {companyProfile.registrationNumber}</Badge>
             <h1 className="mt-5 font-[var(--font-lora)] text-4xl font-black leading-[0.98] tracking-tight text-ink sm:text-5xl lg:text-6xl">
               Complex Projects.
               <span className="block bg-gradient-to-r from-ink via-accent to-gold bg-clip-text text-transparent">
@@ -64,21 +64,7 @@ export default function HomePage() {
             </div>
           </Reveal>
           <Reveal delay={0.1} className="relative">
-            <div className="relative h-[380px] rounded-2xl bg-transparent sm:h-[450px]">
-              <div className="pointer-events-none absolute inset-[8px] rounded-[14px] border-[1.5px] border-gold/80" />
-              <div className="absolute inset-[18px] overflow-hidden rounded-[14px]">
-                <Image
-                  src="/assets/hero-main.jpg"
-                  alt="Connected real estate environment with telecom and smart technology infrastructure"
-                  fill
-                  priority
-                  className="object-cover brightness-[0.92] contrast-[1.06] saturate-[0.88] sepia-[0.12]"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-gold/22 via-transparent to-accent/20 mix-blend-multiply" />
-                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_75%_20%,rgba(231,194,104,0.22),transparent_42%)]" />
-              </div>
-            </div>
+            <HomeHeroSlider />
           </Reveal>
         </div>
       </section>

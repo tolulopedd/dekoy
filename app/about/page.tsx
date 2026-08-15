@@ -109,6 +109,13 @@ export default function AboutPage() {
 
       <section className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <h2 className="font-[var(--font-lora)] text-3xl text-ink">Our Values</h2>
+        <p className="mt-2 text-sm text-slate sm:text-base">
+          Collectively, DeKoy Limited&apos;s leadership and technical personnel possess over{' '}
+          <strong className="font-semibold text-ink">
+            23+ years of combined telecommunications engineering experience gained through previous employment with MTN Nigeria, Airtel Nigeria and T2mobile (Formerly 9mobile).
+          </strong>{' '}
+          This extensive industry experience forms the foundation of our engineering expertise, technical leadership and dependable project delivery capability.
+        </p>
         <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {values.map((item) => (
             <article key={item.title} className="rounded-2xl border border-slate/15 bg-white p-5 shadow-soft">

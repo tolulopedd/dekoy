@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { companyProfile } from '@/data/company';
 import { siteConfig } from '@/lib/site';
 
 const quickLinks = [
@@ -17,20 +16,17 @@ export function Footer() {
     <footer className="border-t border-gold/25 brand-band text-white">
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-3 lg:px-8">
         <section>
-          <div className="flex items-center gap-3">
-            <span className="relative h-12 w-12 overflow-hidden rounded-lg border border-white/20">
-              <Image
-                src="/assets/dekoy-logo.jpg"
-                alt="DeKoy Limited logo"
-                fill
-                sizes="48px"
-                className="object-cover"
-              />
-            </span>
-            <h2 className="text-xl font-semibold">DeKoy Limited</h2>
+          <div className="relative h-12 w-[220px] overflow-hidden sm:h-14 sm:w-[280px]">
+            <Image
+              src="/assets/dekoy-logo.png"
+              alt="DeKoy Limited logo"
+              fill
+              sizes="(max-width: 640px) 220px, 280px"
+              className="object-contain object-left"
+            />
           </div>
           <p className="mt-3 max-w-sm text-sm text-slate-200">
-            Premium delivery partner across Real Estate, Engineering, Telecommunications & IT, Project Management, and General Services.
+            Engineering Connectivity. Delivering Dependability.
           </p>
         </section>
         <section>
@@ -83,7 +79,6 @@ export function Footer() {
                 {siteConfig.socials.facebookName}
               </a>
             </li>
-            <li>Registration No: {companyProfile.registrationNumber}</li>
           </ul>
         </section>
       </div>

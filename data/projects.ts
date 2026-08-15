@@ -33,14 +33,21 @@ export const projects: Project[] = [
     categoryLabel: 'Telecoms Project',
     location: 'Nigeria',
     year: '2026',
-    summary: 'Partnering to manage base stations and mast across Nigeria',
+    summary: 'Providing innovative, dependable and cost-effective solutions that enable our clients to build, operate and maintain reliable communications networks.',
     scope: [
-      'Base station and mast operations support',
-      'Power systems monitoring and uptime management',
-      'Field inspection, preventive maintenance, and escalation response'
+      'Telecom infrastructure deployment, installation, integration and site implementation',
+      'Base station, tower/mast and associated infrastructure engineering support',
+      'Power systems installation, maintenance, optimization and uptime management',
+      'Preventive and corrective maintenance of telecom infrastructure',
+      'Technical Site Surveys (TSS), site audits, inspections and infrastructure assessments',
+      'Network rollout, upgrade, expansion and modernization support',
+      'Equipment installation, commissioning, testing and acceptance',
+      'Project implementation, coordination and technical supervision',
+      'Vendor, contractor and field resource management',
+      'Quality assurance, HSSE compliance and project documentation'
     ],
     solution:
-      'DeKoy deployed coordinated field and technical support teams to maintain mast infrastructure, improve power reliability, and strengthen service continuity across multiple locations in Nigeria.',
+      'DeKoy delivers integrated telecom infrastructure engineering solutions covering site implementation, infrastructure deployment, power systems, technical support, maintenance and project coordination. Our engineering and field teams work across multiple locations to enhance infrastructure reliability, operational performance and service continuity.',
     outcomes: [
       { label: 'Managed Sites', value: 'Nationwide Coverage' },
       { label: 'Power Reliability', value: 'Improved Uptime' },
@@ -55,7 +62,8 @@ export const projects: Project[] = [
     gallery: [
       '/assets/project-telecom-mast-1.jpg',
       '/assets/project-telecom-mast-2.jpg',
-      '/assets/project-telecom-mast-3.jpg'
+      '/assets/project-telecom-mast-3.jpg',
+      '/assets/project-telecom-collage.jpg'
     ]
   },
   {

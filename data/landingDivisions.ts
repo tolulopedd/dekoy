@@ -32,9 +32,9 @@ export const landingDivisions: Division[] = [
     id: 'telecommunications',
     name: 'Telecommunications',
     summary:
-      'Network rollout, implementation support, integration, and maintenance services for telecom infrastructure.',
+      'Telecom Infrastructure Engineering, Deployment & Project Delivery',
     description:
-      'We help clients scale and stabilize telecom operations through coordinated field execution and acceptance governance.',
+      'We deliver end-to-end telecom infrastructure engineering solutions covering network rollout, site implementation, equipment installation and integration, power systems, technical support, maintenance, testing and acceptance. DeKoy supports clients in deploying, optimizing and sustaining reliable telecom infrastructure through disciplined engineering execution, project coordination, quality assurance and HSSE compliance.',
     icon: 'signal'
   },
   {

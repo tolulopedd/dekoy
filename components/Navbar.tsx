@@ -21,30 +21,25 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gold/25 bg-white/92 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-gold/20 bg-white">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-3" aria-label="Go to home page">
-          <span className="relative h-11 w-11 overflow-hidden rounded-lg border border-slate/20 shadow-sm">
+        <Link href="/" className="flex items-center" aria-label="Go to home page">
+          <span className="relative h-[67px] w-[252px] overflow-hidden sm:h-[77px] sm:w-[300px]">
             <Image
-              src="/assets/dekoy-logo.jpg"
+              src="/assets/dekoy-logo.png"
               alt="DeKoy Limited logo"
               fill
-              sizes="44px"
-              className="object-cover"
+              sizes="(max-width: 640px) 252px, 300px"
+              className="object-contain object-left"
               priority
             />
-          </span>
-          <span>
-            <span className="block text-lg font-semibold tracking-tight text-ink">DeKoy</span>
-            <span className="hidden text-[10px] uppercase tracking-[0.22em] text-accent sm:block">
-              Limited
-            </span>
           </span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
           {navLinks.map((link) => {
-            const active = link.href === '/' ? pathname === '/' : pathname === link.href || pathname.startsWith(`${link.href}/`);
+            const active =
+              link.href === '/' ? pathname === '/' : pathname === link.href || pathname.startsWith(`${link.href}/`);
             return (
               <Link
                 key={link.href}
@@ -81,7 +76,8 @@ export function Navbar() {
         <div id="mobile-menu" className="border-t border-slate/15 bg-white md:hidden">
           <nav className="space-y-1 px-4 py-4" aria-label="Mobile Primary">
             {navLinks.map((link) => {
-              const active = link.href === '/' ? pathname === '/' : pathname === link.href || pathname.startsWith(`${link.href}/`);
+              const active =
+                link.href === '/' ? pathname === '/' : pathname === link.href || pathname.startsWith(`${link.href}/`);
               return (
                 <Link
                   key={link.href}

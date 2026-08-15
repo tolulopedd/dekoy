@@ -7,8 +7,7 @@ const resolvedSiteUrl =
 export const siteConfig = {
   companyName: 'DeKoy Limited',
   legalName: 'DeKoy Limited',
-  tagline:
-    'Integrated services across Real Estate, Engineering, Telecommunications & Information Technology, Project Management, and General Services.',
+  tagline: 'Engineering Connectivity. Delivering Dependability.',
   url: resolvedSiteUrl.replace(/\/$/, ''),
   email: 'info@dekoyng.com',
   phone: '+234-8099444003',

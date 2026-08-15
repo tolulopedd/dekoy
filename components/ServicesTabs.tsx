@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useMemo, useState } from 'react';
 import { landingDivisions } from '@/data/landingDivisions';
 import { services } from '@/data/services';
@@ -59,6 +60,19 @@ export function ServicesTabs() {
           <h2 className="text-2xl font-semibold text-ink">{selectedDivision.name}</h2>
           <p className="mt-2 text-sm text-slate">{selectedDivision.summary}</p>
           <p className="mt-2 text-sm text-slate">{selectedDivision.description}</p>
+          {selectedDivision.id === 'telecommunications' ? (
+            <div className="mt-5 overflow-hidden rounded-2xl border border-slate/15 bg-white">
+              <div className="relative h-[360px] w-full sm:h-[500px] lg:h-[620px]">
+                <Image
+                  src="/assets/project-telecom-collage.jpg"
+                  alt="DeKoy telecommunications engineering project collage"
+                  fill
+                  className="object-contain"
+                  sizes="100vw"
+                />
+              </div>
+            </div>
+          ) : null}
         </article>
       ) : null}
 
